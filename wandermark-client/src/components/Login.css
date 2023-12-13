@@ -1,0 +1,58 @@
+.login-container {
+    font-family: 'DM Sans', sans-serif;
+    font-size: large;
+    width: 250px;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: slategray;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20vh auto;
+    cursor: default;
+}
+
+form {
+    font-family: 'DM Sans', sans-serif;
+    font-size: medium;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: .5px;
+}
+
+.login-button {
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: small;
+    background-color: navy;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+.logo-div {
+    align-self: center;
+    margin-top: 10px;
+}
+
+.logo-text{
+    align-self: center;
+    font-weight: bold;
+}
+
+.error-msg {
+    color: red;
+}

@@ -1,0 +1,66 @@
+.register-container {
+    font-family: 'DM Sans', sans-serif;
+    font-size: large;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background-color: slategray;
+    margin: 20vh auto;
+    padding: 20px;
+    cursor: default;
+}
+
+form {
+    font-family: 'DM Sans', sans-serif;
+    font-size: medium;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: .5px;
+}
+
+.register-button {
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: small;
+    align-self: center;
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo-div {
+    align-self: center;
+    margin-top: 10px;
+}
+
+.logo-text{
+    align-self: center;
+}
+
+.success-msg {
+    color: green;
+    font-size: medium;
+    align-self: center;
+}
+
+.error-msg {
+    color: red;
+    font-size: medium;
+    align-self: center;
+}

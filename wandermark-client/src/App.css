@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+
+body {
+    background-color: moccasin;
+}
+
+.leaflet-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.map-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+label {
+    color: blue;
+    font-size: 14px;
+    border-bottom: .5px solid blue;
+    margin: 3px 0;
+}
+
+.star {
+    color: gold;
+}
+
+.card-username ,.card-date {
+    font-size: 14px;
+}
+
+.card-div {
+    font-family: 'DM Sans', sans-serif;
+    font-size: medium;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: .5px;
+}
+
+#button-cancel {
+    margin-top: 10px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.logout {
+    background-color: orangered;
+}
+
+.login {
+    background-color: navy;
+}
+
+.register {
+    background-color: purple;
+}
+
+.buttons, .logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
