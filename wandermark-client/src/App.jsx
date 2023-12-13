@@ -122,7 +122,7 @@ function App() {
 
   const handleDelete = async (pinId) => {
     try {
-      const response = await axios.delete("https://wandermark-server.vercel.app/api/pins/${pinId}");
+      const response = await axios.delete(`https://wandermark-server.vercel.app/api/pins/${pinId}`);
       
       console.log(response.data);
       
