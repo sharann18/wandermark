@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const pinRoute = require('./routes/pins');
 const userRoute = require('./routes/users');
+const PORT = process.env.PORT || 8800
 
 const app = express();
 dotenv.config();
@@ -21,6 +22,6 @@ mongoose
 app.use('/api/pins', pinRoute);
 app.use('/api/users', userRoute);
 
-app.listen(8800, () => {
+app.listen(PORT, () => {
     console.log('server is running...');
 });
