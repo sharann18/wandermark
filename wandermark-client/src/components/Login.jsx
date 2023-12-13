@@ -16,7 +16,7 @@ export default function Login({ myStorage, setCurrentUser }) {
         }
 
         try {
-          const res = await axios.post("http://localhost:8800/api/users/login", loginUser);
+          const res = await axios.post(`${window.location.origin}/api/users/login`, loginUser);
           myStorage.setItem("user", res.data.username);
           setCurrentUser(res.data.username);
           setError(false);
