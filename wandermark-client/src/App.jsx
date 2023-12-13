@@ -59,7 +59,7 @@ function App() {
   useEffect(() => {
     const getPins = async () => {
       try {
-        const allPins = await axios.get("http://localhost:8800/api/pins");
+        const allPins = await axios.get(`${window.location.origin}/api/pins`);
         setPins(allPins.data);
       } catch (err) {
         console.log('internal server error');
@@ -91,7 +91,7 @@ function App() {
     }
 
     try {
-      const res = await axios.post("http://localhost:8800/api/pins", newPin);
+      const res = await axios.post(`${window.location.origin}/api/pins`, newPin);
       setPins([...pins, res.data]);
       setNewPlace(null);
 
@@ -122,7 +122,7 @@ function App() {
 
   const handleDelete = async (pinId) => {
     try {
-      const response = await axios.delete(`http://localhost:8800/api/pins/${pinId}`);
+      const response = await axios.delete(`${window.location.origin}/api/pins/${pinId}`);
       
       console.log(response.data);
       
