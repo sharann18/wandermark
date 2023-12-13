@@ -19,7 +19,7 @@ export default function Register() {
         }
 
         try {
-            const res = await axios.post(`${window.location.origin}/api/users/register`, newUser);
+            const res = await axios.post("https://wandermark-server.vercel.app/api/users/register", newUser);
             setError(false);
             setSuccess(true);
         } catch (err) {
